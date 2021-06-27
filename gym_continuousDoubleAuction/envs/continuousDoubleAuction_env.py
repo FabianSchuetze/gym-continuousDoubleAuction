@@ -82,6 +82,7 @@ class continuousDoubleAuctionEnv(Exchg_Helper, gym.Env, MultiAgentEnv):
     # actions is a list of actions from all agents (traders) at t step
     # each action is a list of (ID, type, side, size, price)
     def step(self, actions):
+        breakpoint()
 
         self.model_actions = actions
         #self.print_table("Model actions:\n", actions)
